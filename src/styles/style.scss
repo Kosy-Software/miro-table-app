@@ -1,0 +1,92 @@
+@use "_colors.scss" as colors;
+
+$input-border-radius: 12px;
+$button-border-radius: 28px;
+
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.02em;
+    color: colors.$color-grey;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: colors.$color-black-bluish;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.gap {
+    height: 5px;
+    content: ' ';
+}
+
+.waiting {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+
+    .gap {
+        height: 24px;
+        content: ' '
+    }
+
+    .img-container {
+        width: 400px;
+    }
+}
+
+button {
+    padding: 17.5px;
+    font-size: 14px;
+    border-radius: $button-border-radius;
+    border: 1px solid colors.$color-grey-border;
+    cursor: pointer;
+    background-color: white;
+    color: colors.$color-grey;
+
+    img {
+        position: fixed;
+        margin-top: -2px;
+        margin-left: 6px;
+        max-height: 20px;
+    }
+}
+
+.picking {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    row-gap: 1em;
+    height: 100vh;
+    font-size: 16px;
+    text-align: center;
+    
+    div {
+        width: 400px;
+    }
+
+    p {
+        margin: 0;
+        height: 20px;
+        font-size: 16px;
+    }
+}
+
+.viewing {
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: 0px;
+    }
+}
