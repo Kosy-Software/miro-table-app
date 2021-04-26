@@ -82,5 +82,5 @@
         <Waiting name={initializer.clientName} />
     {/if}
 {:else}
-    <p>Waiting for Kosy...</p>
+    <p></p>
 {/if}

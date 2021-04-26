@@ -2,6 +2,12 @@
     export let url: string;
 </script>
 
-<div class="viewing">
-    <iframe title="miro board" src={url}></iframe>
-</div>
+<style lang="scss">
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: 0px;
+    }
+</style>
+
+<iframe title="miro board" src={url}></iframe>

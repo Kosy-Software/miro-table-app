@@ -26,6 +26,22 @@
     }
 </script>
 
+<style lang="scss">
+    .picking {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        row-gap: 1em;
+        height: 100vh;
+        font-size: 16px;
+        text-align: center;
+        
+        div {
+            width: 400px;
+        }
+    }
+</style>
+
 <div class="picking">
     <div>
         <h3>Embed Miro</h3>

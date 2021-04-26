@@ -29,23 +29,6 @@ h3 {
     content: ' ';
 }
 
-.waiting {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    height: 100vh;
-
-    .gap {
-        height: 24px;
-        content: ' '
-    }
-
-    .img-container {
-        width: 400px;
-    }
-}
-
 button {
     padding: 17.5px;
     font-size: 14px;
@@ -60,33 +43,5 @@ button {
         margin-top: -2px;
         margin-left: 6px;
         max-height: 20px;
-    }
-}
-
-.picking {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    row-gap: 1em;
-    height: 100vh;
-    font-size: 16px;
-    text-align: center;
-    
-    div {
-        width: 400px;
-    }
-
-    p {
-        margin: 0;
-        height: 20px;
-        font-size: 16px;
-    }
-}
-
-.viewing {
-    iframe {
-        width: 100vw;
-        height: 100vh;
-        border: 0px;
     }
 }
