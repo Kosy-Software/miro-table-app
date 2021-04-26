@@ -76,12 +76,10 @@
 {#if initializer && currentClient}
     {#if state.miroUrl}
         <Viewing url={state.miroUrl} />
-    {:else}
-        {#if initializer.clientUuid === currentClient.clientUuid}
+    {:else if initializer.clientUuid === currentClient.clientUuid}
             <Picking on:message={e => processPickingMessage(e.detail)} />
-        {:else}
-            <Waiting name={initializer.clientName} />
-        {/if}
+    {:else}
+        <Waiting name={initializer.clientName} />
     {/if}
 {:else}
     <p>Waiting for Kosy...</p>
