@@ -26,7 +26,7 @@
     }
 
 
-    //If no google drive url has been picked, and the initializer is gone -> end the integration
+    //If no url has been picked, and the initializer is gone -> end the integration
     //Otherwise, ignore.
     let onClientHasLeft = (clientUuid: string) => {
         if (clientUuid === initializer.clientUuid && !state.miroUrl) {
