@@ -55,7 +55,7 @@
     kosyApi.startApp().then((initialInfo: InitialInfo<AppState>) => {
         initializer = initialInfo.clients[initialInfo.initializerClientUuid];
         currentClient = initialInfo.clients[initialInfo.currentClientUuid];
-        state = initialInfo.currentAppState;
+        state = initialInfo.currentAppState ?? state;
     });
 
     let processPickingMessage = (message: PickingMessage) => {
