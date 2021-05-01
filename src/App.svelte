@@ -18,8 +18,7 @@
     }
 
     let setState = (newState: AppState) => {
-        state = newState;
-        this.renderComponent();
+        state = newState ?? state;
     }
 
     //For this app, it's not important to know who's at the table
@@ -30,7 +29,7 @@
     //If no google drive url has been picked, and the initializer is gone -> end the integration
     //Otherwise, ignore.
     let onClientHasLeft = (clientUuid: string) => {
-        if (clientUuid === this.initializer.clientUuid && !this.state.googleDriveUrl) {
+        if (clientUuid === initializer.clientUuid && !state.miroUrl) {
             kosyApi.stopApp();
         }
     }
