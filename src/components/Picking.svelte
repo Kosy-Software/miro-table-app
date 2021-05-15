@@ -10,7 +10,7 @@
         window["miroBoardsPicker"].open({
             clientId: settings.miro.clientId,
             action: "select",
-            allowCreateAnonymousBoards: true,
+            allowCreateAnonymousBoards: false,
             getToken: () => fetch(settings.miro.jwtTokenUrl).then(result => result.text()),
             success: (data: any) => {
                 console.log("on success", data);
