@@ -28,20 +28,3 @@ h3 {
     height: 5px;
     content: ' ';
 }
-
-button {
-    padding: 17.5px;
-    font-size: 14px;
-    border-radius: $button-border-radius;
-    border: 1px solid colors.$color-grey-border;
-    cursor: pointer;
-    background-color: white;
-    color: colors.$color-grey;
-
-    img {
-        position: fixed;
-        margin-top: -2px;
-        margin-left: 6px;
-        max-height: 20px;
-    }
-}

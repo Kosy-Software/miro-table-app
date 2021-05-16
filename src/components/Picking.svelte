@@ -1,5 +1,6 @@
 <script type="ts">
     import type { PickingEvent } from "../lib/componentMessages";
+    import Button from "./Button.svelte";
     import { createEventDispatcher } from 'svelte';
     import settings from "../../settings.json";
 
@@ -47,5 +48,5 @@
         <h3>Embed Miro</h3>
     </div>
     <div class="gap"></div>
-    <button id="open-picker" on:click={onClick}>Select a miro board</button>
+    <Button importance="secondary" on:click={onClick}>Select a miro board</Button>
 </div>
