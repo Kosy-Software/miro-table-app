@@ -1,6 +1,6 @@
 <script type="ts">
     import type { PickingEvent } from "../lib/componentMessages";
-    import Button from "./Button.svelte";
+    import Button from "@kosy/kosy-svelte-components/Button.svelte";
     import { createEventDispatcher } from 'svelte';
     import settings from "../../settings.json";
 
