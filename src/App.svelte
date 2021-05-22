@@ -44,10 +44,11 @@
         }
     }  
 
-    const kosyApi = new KosyApi<AppState, AppMessage>({
+    const kosyApi = new KosyApi<AppState, AppMessage, AppMessage>({
         onClientHasJoined: (client) => onClientHasJoined(client),
         onClientHasLeft: (clientUuid) => onClientHasLeft(clientUuid),
-        onReceiveMessage: (message) => { processMessage(message) },
+        onReceiveMessageAsHost: (message) => message,
+        onReceiveMessageAsClient: (message) => { processMessage(message) },
         onRequestState: () => getState(),
         onProvideState: (newState: AppState) => setState(newState)
     });
