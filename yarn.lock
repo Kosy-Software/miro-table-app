@@ -872,10 +872,10 @@
   resolved "https://registry.npmjs.org/@discoveryjs/json-ext/-/json-ext-0.5.3.tgz"
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
-"@kosy/kosy-app-api@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@kosy/kosy-app-api/-/kosy-app-api-0.3.3.tgz#45e00809b1ceffe44a9dd19b3d50b5dde74f8c11"
-  integrity sha512-MNW3iXMfy5QLtvLZAz9nNz/fROOfhifl+/NhbcEyD6EjzzA2aIDg8MMrfaKIHG6dX0UFVXx3+drHCOPb2aJnyA==
+"@kosy/kosy-app-api@^0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@kosy/kosy-app-api/-/kosy-app-api-0.3.10.tgz#4124f2fcdb5e9965b2fdae610eeb8eaaa4be7470"
+  integrity sha512-gXges0IKPsTI9D1U+7FPdG+MHeGInOxqGSlYwsLv4uaw2gYaGltv+XjbCZwNxa89rBBzWmAZXYobxzwk5e3cjQ==
 
 "@kosy/kosy-svelte-components@^0.1.5":
   version "0.1.5"

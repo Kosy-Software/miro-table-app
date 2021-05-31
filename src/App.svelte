@@ -21,11 +21,6 @@
         state = newState ?? state;
     }
 
-    //For this app, it's not important to know who's at the table
-    let onClientHasJoined = (client: ClientInfo) => {
-    }
-
-
     //If no url has been picked, and the initializer is gone -> end the integration
     //Otherwise, ignore.
     let onClientHasLeft = (clientUuid: string) => {
@@ -45,7 +40,6 @@
     }  
 
     const kosyApi = new KosyApi<AppState, AppMessage, AppMessage>({
-        onClientHasJoined: (client) => onClientHasJoined(client),
         onClientHasLeft: (clientUuid) => onClientHasLeft(clientUuid),
         onReceiveMessageAsHost: (message) => message,
         onReceiveMessageAsClient: (message) => { processMessage(message) },
