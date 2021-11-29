@@ -34,9 +34,10 @@ jobs:
           name: "settings.json"
           json: ${{ secrets.MIRO_CREDENTIALS_JSON }}
 
-      - name: Install and Build 🔧
+      - name: Install, Check and Build 🔧
         run: |
           yarn install
+          yarn run check
           yarn run build
            
       - name: Deploy to aws 🚀
